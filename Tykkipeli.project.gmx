@@ -24,6 +24,12 @@
     <sprite>sprites\spr_sorapiha</sprite>
     <sprite>sprites\spr_ruohoa</sprite>
     <sprite>sprites\spr_ruohoa2</sprite>
+    <sprite>sprites\spr_jarvi</sprite>
+    <sprite>sprites\spr_joki</sprite>
+    <sprite>sprites\spr_joki_2</sprite>
+    <sprite>sprites\spr_jokipatka</sprite>
+    <sprite>sprites\spr_vuori</sprite>
+    <sprite>sprites\spr_metsa</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_default</background>
@@ -34,26 +40,28 @@
     <script>scripts\scr_testi.gml</script>
     <script>scripts\scr_Get_Obj_GridPos.gml</script>
     <script>scripts\scr_Mark_GridPos.gml</script>
+    <script>scripts\scr_Mark_GridPos_Este.gml</script>
     <script>scripts\scr_Mark_GridPos_Free.gml</script>
     <script>scripts\scr_updateField.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_start_controller</object>
-    <object>objects\obj_suora</object>
-    <object>objects\obj_suora2</object>
     <object>objects\obj_testi_controller</object>
-    <object>objects\obj_T_palikka</object>
-    <object>objects\obj_L_palikka</object>
     <object>objects\obj_palikka</object>
-    <object>objects\obj_kulmapalikka</object>
     <object>objects\obj_nelio_iso</object>
     <object>objects\obj_kursori</object>
     <object>objects\obj_kuula</object>
-    <object>objects\object11</object>
+    <object>objects\obj_este_joki_1</object>
+    <object>objects\obj_este_jarvi</object>
+    <object>objects\obj_este_joki_2</object>
+    <object>objects\obj_este_joki_3</object>
+    <object>objects\obj_este_vuori</object>
+    <object>objects\obj_este_metsa</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
     <room>rooms\rm_taso</room>
+    <room>rooms\koe</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

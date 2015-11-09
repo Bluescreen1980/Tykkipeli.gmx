@@ -6,7 +6,8 @@ global.ruudut_korkeus = room_height/global.ruudun_koko; //laskee ruutujen määr
 global.varattu = false; //voiko ruutuun rakentaa vai ei.
 global.kursoripalikkaX = 5;  //aloitusruudut kursoripalikoille
 global.kursoripalikkaY = 5;
-
+global.voiasettaa1 = true;  //voiko 1. pelaaja asettaa
+ 
 
 //global.tasoarray pitää sisällään kaksiulotteisessa taulukossa kentän ruudut, array
 //luodaan alussa pitämään sisällään kaikki pelialueen sisäiset ruudut
