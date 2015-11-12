@@ -10,6 +10,7 @@ with (obj_palikka)
     instance_destroy();
 }
 
+        scr_Check_Castle();     //tarkastetaan sisäpihat
 
 //käydään array läpi
 for (var yy = 0; yy < global.ruudut_korkeus; yy++){
@@ -25,6 +26,16 @@ gridY = yy*global.ruudun_koko;
                     with (inst)
                       {
                       //    voisimme antaa luomallemme instanssille arvoja tässä.
+                      } 
+                  } 
+                  
+                  if (global.pihaarray[yy,xx] == 1){
+                      //jos piharuudukkossa on piha, luo objekti. Tämä on vain testikäytöä toistaiseksi       
+                         
+                     inst = instance_create(gridX,gridY, obj_palikka);
+                    with (inst)
+                      {
+                      
                       } 
                   } 
        } 
