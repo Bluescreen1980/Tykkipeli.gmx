@@ -43,7 +43,6 @@
     <script>scripts\scr_Mark_GridPos_Este.gml</script>
     <script>scripts\scr_Mark_GridPos_Free.gml</script>
     <script>scripts\scr_updateField.gml</script>
-    <script>scripts\scr_Check_Castle.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_start_controller</object>
