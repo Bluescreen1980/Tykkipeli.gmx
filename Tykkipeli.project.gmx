@@ -24,6 +24,12 @@
     <sprite>sprites\spr_sorapiha</sprite>
     <sprite>sprites\spr_ruohoa</sprite>
     <sprite>sprites\spr_ruohoa2</sprite>
+    <sprite>sprites\spr_jarvi</sprite>
+    <sprite>sprites\spr_joki3</sprite>
+    <sprite>sprites\spr_metsa</sprite>
+    <sprite>sprites\spr_vesieste</sprite>
+    <sprite>sprites\spr_vesieste2</sprite>
+    <sprite>sprites\spr_vuori</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_default</background>
@@ -37,6 +43,7 @@
     <script>scripts\scr_Mark_GridPos_Free.gml</script>
     <script>scripts\scr_updateField.gml</script>
     <script>scripts\scr_Check_Castle.gml</script>
+    <script>scripts\scr_Mark_GridPos_Este.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_start_controller</object>
@@ -51,6 +58,12 @@
     <object>objects\obj_kursori</object>
     <object>objects\obj_kuula</object>
     <object>objects\object11</object>
+    <object>objects\obj_este_jarvi</object>
+    <object>objects\obj_joki3</object>
+    <object>objects\obj_metsa</object>
+    <object>objects\obj_vesieste</object>
+    <object>objects\obj_vesieste2</object>
+    <object>objects\obj_vuori</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
