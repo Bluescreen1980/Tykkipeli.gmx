@@ -10,7 +10,12 @@ with (obj_palikka)
     instance_destroy();
 }
 
-        scr_Check_Castle();     //tarkastetaan sisäpihat
+scr_Clear_Yard_Data();  //Tyhjennetään piha data
+        
+//tarkastetaan sisäpihat skripti pitää toistaa muutaman kerran että se toimii oikein
+for(var i=0; i<5 ; i++){
+    scr_Check_Castle();
+}
 
 //käydään array läpi
 for (var yy = 0; yy < global.ruudut_korkeus; yy++){
@@ -19,7 +24,7 @@ gridY = yy*global.ruudun_koko;
      for (var xx = 0; xx < global.ruudut_leveys; xx++){    
      gridX = xx*global.ruudun_koko;     
               
-                    if (global.tasoarray[yy,xx] == 1){
+                    if (global.grapharray[yy,xx] == 1){
                       //jos tasoruudukossa on varattu ruutu, luo objekti.       
                          
                      inst = instance_create(gridX,gridY, obj_palikka);
@@ -35,7 +40,7 @@ gridY = yy*global.ruudun_koko;
                      inst = instance_create(gridX,gridY, obj_palikka);
                     with (inst)
                       {
-                      
+                            image_blend = c_aqua;
                       } 
                   } 
        } 
