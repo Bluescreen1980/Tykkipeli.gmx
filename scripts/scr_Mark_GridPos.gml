@@ -15,8 +15,9 @@ gridY = yy*global.ruudun_koko;
      
             if position_meeting(gridX,gridY, objekti){     
      
-                    if (global.tasoarray[yy,xx] = 0){
+                    if (global.tasoarray[yy,xx] == 0){
                     global.tasoarray[yy,xx] = 1;            //merkitään ruutu varatuksi
+                    global.grapharray[yy,xx] = 1;
                     }         
            } 
        } 

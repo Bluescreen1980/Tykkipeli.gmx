@@ -44,6 +44,7 @@
     <script>scripts\scr_updateField.gml</script>
     <script>scripts\scr_Check_Castle.gml</script>
     <script>scripts\scr_Mark_GridPos_Este.gml</script>
+    <script>scripts\scr_Clear_Yard_Data.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_start_controller</object>

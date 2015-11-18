@@ -1,21 +1,12 @@
 //Skripti tarkistaa onko linna vedenpitävä
 
-//nollataan aiemmat piha tiedot
-for (var yy = 0; yy < global.ruudut_korkeus; yy++){
- 
-     for (var xx = 0; xx < global.ruudut_leveys; xx++){
-
-                global.pihaarray[yy,xx] = 1;
-          
-     }
-}
 
 //Merkataan seinät
 for (var yy = 0; yy < global.ruudut_korkeus; yy++){
  
      for (var xx = 0; xx < global.ruudut_leveys; xx++){
 
-            if(global.tasoarray[yy,xx] == 1){
+            if(global.grapharray[yy,xx] == 1){
                 global.pihaarray[yy,xx] = 2;
             }
           
@@ -93,12 +84,27 @@ for (var yy = 0; yy < global.ruudut_korkeus; yy++){
  
      for (var xx = 0; xx < global.ruudut_leveys; xx++){
  
-           if ((yy != global.ruudut_korkeus-1 || xx != global.ruudut_leveys-1) || (yy != 0 || xx != 0)){
+           if (!(yy == global.ruudut_korkeus-1 || xx == global.ruudut_leveys-1) || !(yy < 1 || xx < 1)){
             
                 if (global.pihaarray[yy,xx] == 1 && (global.pihaarray[yy+1,xx-1] == 0 || global.pihaarray[yy-1,xx+1] == 0)) {
                         global.pihaarray[yy,xx] = 0;
                 }
            
            }         
+     }
+}
+
+//Merkataan piha grapharrayhyn
+for (var yy = 0; yy < global.ruudut_korkeus; yy++){
+ 
+     for (var xx = 0; xx < global.ruudut_leveys; xx++){
+        
+        if (global.pihaarray[yy,xx] == 0){
+            global.grapharray[yy,xx] = 0;
+        }
+        else if (global.pihaarray[yy,xx] == 1) {
+            global.grapharray[yy,xx] = 2;
+        }
+          
      }
 }

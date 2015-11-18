@@ -13,7 +13,7 @@ global.kursoripalikkaY = 5;
 // 
 //global.tasoarray[i,ruudut_korkeus] = n;
 //
-//n tarkoittaa 0=voi rakentaa 1= blokattu ykkospelaajalta, 2 = blokattu kakkospelaajalta 
+//n tarkoittaa 0=voi rakentaa 1= blokattu ykkospelaajalta, 2 = blokattu kakkospelaajalta, 3 = blokattu molemmilta
 //
 //alustamme tasoarrayn Aku-Ankka tason koodilla. 
 
@@ -24,6 +24,19 @@ for (var yy = 0; yy < global.ruudut_korkeus; yy++){
         global.tasoarray[yy,xx] = 0;
         //tyhjää täynnä
     }
+    
+}
+
+
+// Merkataan reunat blokatuiksi
+for (var yy = 0; yy < global.ruudut_korkeus; yy++){
+    global.tasoarray[yy,global.ruudut_leveys-1] = 3;
+    global.tasoarray[yy,0] = 3;  
+}
+
+for (var xx = 0; xx < global.ruudut_leveys; xx++){
+    global.tasoarray[global.ruudut_korkeus-1,xx] = 3;
+    global.tasoarray[0,xx] = 3;
 }
 
 /*
@@ -40,3 +53,18 @@ for (var yy = 0; yy < global.ruudut_korkeus; yy++){
         //alustetaan kaikki ruudut sisäpihaksi
     }
 }
+
+/*
+global.grapharray tätä arrayta käytetään objektien grafiikoiden piirtämiseen.
+Tällä arraylla myös kerrotaan muille skripteille objektien tyyppi.
+
+n tarkoittaa    0 = ei grafiikkaa   1 = seinä   2 = sisäpiha
+*/
+for (var yy = 0; yy < global.ruudut_korkeus; yy++){
+    
+     for (var xx = 0; xx < global.ruudut_leveys; xx++){         
+        global.grapharray[yy,xx] = 0;
+    }
+}
+
+scr_updateField();
