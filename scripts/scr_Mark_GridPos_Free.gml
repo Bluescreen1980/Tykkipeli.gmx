@@ -17,6 +17,7 @@ gridY = yy*global.ruudun_koko;
      
                     if (global.tasoarray[yy,xx] = 1){
                     global.tasoarray[yy,xx] = 0;            //merkitään ruutu vapaaksi
+                    global.grapharray[yy,xx] = 0;
                     onko_varattu = false;
                     }         
            } 
