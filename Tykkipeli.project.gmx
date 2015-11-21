@@ -30,12 +30,16 @@
     <sprite>sprites\spr_vesieste</sprite>
     <sprite>sprites\spr_vesieste2</sprite>
     <sprite>sprites\spr_vuori</sprite>
+    <sprite>sprites\spr_tykki</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_default</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\scr_callEachCannon.gml</script>
+    <script>scripts\scr_shootPlace.gml</script>
+    <script>scripts\scr_tykkikaantyy.gml</script>
     <script>scripts\scr_initiate_at_start.gml</script>
     <script>scripts\scr_testi.gml</script>
     <script>scripts\scr_Get_Obj_GridPos.gml</script>
@@ -65,6 +69,7 @@
     <object>objects\obj_vesieste</object>
     <object>objects\obj_vesieste2</object>
     <object>objects\obj_vuori</object>
+    <object>objects\obj_tykki</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
