@@ -69,6 +69,7 @@
   <rooms name="rooms">
     <room>rooms\rm_start</room>
     <room>rooms\rm_taso</room>
+    <room>rooms\rm_harjoitusta</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
