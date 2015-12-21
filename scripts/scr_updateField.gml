@@ -10,6 +10,11 @@ with (obj_palikka)
     instance_destroy();
 }
 
+with (obj_sorapiha)
+{
+    instance_destroy();
+}
+
 scr_Clear_Yard_Data();  //Tyhjennetään piha data
         
 //tarkastetaan sisäpihat skripti pitää toistaa muutaman kerran että se toimii oikein
@@ -35,9 +40,9 @@ gridY = yy*global.ruudun_koko;
                   } 
                   
                   if (global.pihaarray[yy,xx] == 1){
-                      //jos piharuudukkossa on piha, luo objekti. Tämä on vain testikäytöä toistaiseksi       
+                      //jos piharuudukkossa on piha, luo pihaobjekti.     
                          
-                     inst = instance_create(gridX,gridY, obj_palikka);
+                     inst = instance_create(gridX,gridY, obj_sorapiha);
                     with (inst)
                       {
                             image_blend = c_aqua;

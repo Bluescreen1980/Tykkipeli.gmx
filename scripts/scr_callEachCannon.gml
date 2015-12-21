@@ -17,5 +17,3 @@ for (i = 0; i < instance_number(obj_tykki); i += 1)
    
    }
    
-
-

@@ -49,12 +49,16 @@
     <script>scripts\scr_Check_Castle.gml</script>
     <script>scripts\scr_Mark_GridPos_Este.gml</script>
     <script>scripts\scr_Clear_Yard_Data.gml</script>
+    <script>scripts\scr_random_block.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_old_english</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_start_controller</object>
     <object>objects\obj_suora</object>
     <object>objects\obj_suora2</object>
-    <object>objects\obj_testi_controller</object>
+    <object>objects\obj_level_controller</object>
     <object>objects\obj_T_palikka</object>
     <object>objects\obj_L_palikka</object>
     <object>objects\obj_palikka</object>
@@ -70,6 +74,7 @@
     <object>objects\obj_vesieste2</object>
     <object>objects\obj_vuori</object>
     <object>objects\obj_tykki</object>
+    <object>objects\obj_sorapiha</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
