@@ -23,9 +23,9 @@
     <glyph character="61" x="309" y="155" w="35" h="52" shift="43" offset="4"/>
     <glyph character="77" x="60" y="2" w="63" h="68" shift="65" offset="1"/>
     <glyph character="122" x="750" y="155" w="18" h="72" shift="21" offset="1"/>
-    <glyph character="115" x="399" y="155" w="27" h="63" shift="29" offset="1"/>
     <glyph character="56" x="30" y="155" w="29" h="63" shift="33" offset="2"/>
     <glyph character="35" x="453" y="81" w="38" h="64" shift="43" offset="3"/>
+    <glyph character="115" x="399" y="155" w="27" h="63" shift="29" offset="1"/>
     <glyph character="105" x="42" y="234" w="14" h="63" shift="18" offset="2"/>
     <glyph character="47" x="606" y="81" w="33" h="65" shift="36" offset="1"/>
     <glyph character="80" x="357" y="2" w="48" h="72" shift="54" offset="2"/>
@@ -34,12 +34,12 @@
     <glyph character="48" x="216" y="155" w="29" h="63" shift="33" offset="2"/>
     <glyph character="32" x="840" y="155" w="16" h="77" shift="16" offset="0"/>
     <glyph character="91" x="2" y="234" w="13" h="74" shift="18" offset="4"/>
-    <glyph character="79" x="824" y="2" w="50" h="63" shift="54" offset="2"/>
-    <glyph character="97" x="530" y="155" w="26" h="63" shift="29" offset="2"/>
     <glyph character="114" x="662" y="155" w="23" h="63" shift="26" offset="2"/>
     <glyph character="57" x="154" y="155" w="29" h="63" shift="33" offset="2"/>
-    <glyph character="107" x="185" y="155" w="29" h="63" shift="32" offset="2"/>
     <glyph character="98" x="558" y="155" w="25" h="63" shift="29" offset="1"/>
+    <glyph character="79" x="824" y="2" w="50" h="63" shift="54" offset="2"/>
+    <glyph character="107" x="185" y="155" w="29" h="63" shift="32" offset="2"/>
+    <glyph character="97" x="530" y="155" w="26" h="63" shift="29" offset="2"/>
     <glyph character="46" x="106" y="234" w="10" h="63" shift="18" offset="4"/>
     <glyph character="38" x="2" y="81" w="46" h="63" shift="51" offset="3"/>
     <glyph character="100" x="502" y="155" w="26" h="63" shift="29" offset="2"/>

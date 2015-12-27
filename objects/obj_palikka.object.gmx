@@ -3,7 +3,7 @@
   <spriteName>spr_muuri_taytetty</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-20</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -107,7 +107,7 @@ instance_destroy();
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_kuula">
+    <event eventtype="4" ename="obj_damager">
       <action>
         <libid>1</libid>
         <id>611</id>

@@ -31,6 +31,8 @@
     <sprite>sprites\spr_vesieste2</sprite>
     <sprite>sprites\spr_vuori</sprite>
     <sprite>sprites\spr_tykki</sprite>
+    <sprite>sprites\spr_explosion</sprite>
+    <sprite>sprites\spr_kraateri</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_default</background>
@@ -50,6 +52,8 @@
     <script>scripts\scr_Mark_GridPos_Este.gml</script>
     <script>scripts\scr_Clear_Yard_Data.gml</script>
     <script>scripts\scr_random_block.gml</script>
+    <script>scripts\src_create_shot1.gml</script>
+    <script>scripts\scr_shot.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_old_english</font>
@@ -75,6 +79,9 @@
     <object>objects\obj_vuori</object>
     <object>objects\obj_tykki</object>
     <object>objects\obj_sorapiha</object>
+    <object>objects\obj_explosion</object>
+    <object>objects\obj_kraateri</object>
+    <object>objects\obj_damager</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>

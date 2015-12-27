@@ -7,8 +7,12 @@ global.ruudut_korkeus = room_height/global.ruudun_koko; //laskee ruutujen määr
 global.varattu = false; //voiko ruutuun rakentaa vai ei.
 global.kursoripalikkaX = 5;  //aloitusruudut kursoripalikoille
 global.kursoripalikkaY = 5;
-global.temp_enter_pressed = 0; //temp
-global.block_generate_mode = 0 ; // se miten blokit määräytyy 0 = järjestyksessä (testi) 1=randomilla
+global.kursoriX = 0;
+global.kursoriY = 0;
+global.ballspeed = 12; //ammusten nopeus
+global.temp_enter_pressed = 0; // enterin painalluksia laskeva numero
+global.block_generate_mode = 1 ; // se miten blokit määräytyy 0 = järjestyksessä (testi) 1=randomilla
+global.edellinen_numero = 0; // temp
 
 //global.tasoarray pitää sisällään kaksiulotteisessa taulukossa kentän ruudut, array
 //luodaan alussa pitämään sisällään kaikki pelialueen sisäiset ruudut

@@ -107,7 +107,7 @@ instance_destroy();
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_kuula">
+    <event eventtype="4" ename="obj_damager">
       <action>
         <libid>1</libid>
         <id>611</id>

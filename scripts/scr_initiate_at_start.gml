@@ -1,4 +1,5 @@
-global.gamemode = 1 ; // olisko 1 = rakentelu 2 = tykkien asettelu 3 = ampumisvuoro?
+global.gamemode = 0 ; // olisko 1 = rakentelu 2 = tykkien asettelu 3 = ampumisvuoro?
+global.aika = 0; // Alkaa nollasta. Ajastin 45s rakentelua, 30s ampumista, 30s tykkien asettelu
 
 global.ruudun_koko = 22;   //yhden ruudun koko pikseleinä. 
 global.ruudut_leveys = room_width/global.ruudun_koko; //laskee ruutujen määrän ikkunan koon mukaan
@@ -6,7 +7,12 @@ global.ruudut_korkeus = room_height/global.ruudun_koko; //laskee ruutujen määr
 global.varattu = false; //voiko ruutuun rakentaa vai ei.
 global.kursoripalikkaX = 5;  //aloitusruudut kursoripalikoille
 global.kursoripalikkaY = 5;
-
+global.kursoriX = 0;
+global.kursoriY = 0;
+global.ballspeed = 12; //ammusten nopeus
+global.temp_enter_pressed = 0; // enterin painalluksia laskeva numero
+global.block_generate_mode = 1 ; // se miten blokit määräytyy 0 = järjestyksessä (testi) 1=randomilla
+global.edellinen_numero = 0; // temp
 
 //global.tasoarray pitää sisällään kaksiulotteisessa taulukossa kentän ruudut, array
 //luodaan alussa pitämään sisällään kaikki pelialueen sisäiset ruudut

@@ -31,6 +31,8 @@
     <sprite>sprites\spr_vesieste2</sprite>
     <sprite>sprites\spr_vuori</sprite>
     <sprite>sprites\spr_tykki</sprite>
+    <sprite>sprites\spr_explosion</sprite>
+    <sprite>sprites\spr_kraateri</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_default</background>
@@ -49,12 +51,18 @@
     <script>scripts\scr_Check_Castle.gml</script>
     <script>scripts\scr_Mark_GridPos_Este.gml</script>
     <script>scripts\scr_Clear_Yard_Data.gml</script>
+    <script>scripts\scr_random_block.gml</script>
+    <script>scripts\src_create_shot1.gml</script>
+    <script>scripts\scr_shot.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_old_english</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_start_controller</object>
     <object>objects\obj_suora</object>
     <object>objects\obj_suora2</object>
-    <object>objects\obj_testi_controller</object>
+    <object>objects\obj_level_controller</object>
     <object>objects\obj_T_palikka</object>
     <object>objects\obj_L_palikka</object>
     <object>objects\obj_palikka</object>
@@ -70,6 +78,10 @@
     <object>objects\obj_vesieste2</object>
     <object>objects\obj_vuori</object>
     <object>objects\obj_tykki</object>
+    <object>objects\obj_sorapiha</object>
+    <object>objects\obj_explosion</object>
+    <object>objects\obj_kraateri</object>
+    <object>objects\obj_damager</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
