@@ -34,6 +34,8 @@
     <sprite>sprites\spr_explosion</sprite>
     <sprite>sprites\spr_kraateri</sprite>
     <sprite>sprites\spr_logo</sprite>
+    <sprite>sprites\spr_menu_marker</sprite>
+    <sprite>sprites\spr_menu_button</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_default</background>
@@ -55,7 +57,6 @@
     <script>scripts\scr_random_block.gml</script>
     <script>scripts\src_create_shot1.gml</script>
     <script>scripts\scr_shot.gml</script>
-    <script>scripts\scr_mainMenu.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_old_english</font>
@@ -85,13 +86,25 @@
     <object>objects\obj_kraateri</object>
     <object>objects\obj_damager</object>
     <object>objects\obj_logo</object>
-    <object>objects\obj_menu</object>
+    <objects name="Menus">
+      <object>objects\obj_optionsMenu</object>
+      <object>objects\obj_mainMenu</object>
+      <object>objects\obj_unfinishedMenu</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_mainMenu</room>
+    <room>rooms\rm_Main</room>
     <room>rooms\rm_start</room>
     <room>rooms\rm_taso</room>
     <room>rooms\rm_harjoitusta</room>
+    <rooms name="Menus">
+      <room>rooms\rm_Options</room>
+      <room>rooms\rm_EndScreen</room>
+      <room>rooms\rm_PlayGame</room>
+      <room>rooms\rm_Controls</room>
+      <room>rooms\rm_Languages</room>
+      <room>rooms\rm_Audio</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

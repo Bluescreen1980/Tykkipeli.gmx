@@ -28,7 +28,11 @@
             <string>space = 64;
 menuIndex = 0;
 
-script_execute(scr_menu_main);
+titles[0] = "Controls";
+titles[1] = "Languages";
+titles[2] = "Audio";
+titles[3] = "Back";
+
 </string>
           </argument>
         </arguments>
@@ -68,11 +72,11 @@ if (move != 0) {
     if (menuIndex &lt; 0) {
     
     // User has exceeded the first index, moving user to last index
-        menuIndex = array_length_1d(menu) - 1;
+        menuIndex = array_length_1d(titles) - 1;
     
     }
     
-    if ( menuIndex &gt; array_length_1d(menu) - 1){
+    if ( menuIndex &gt; array_length_1d(titles) - 1){
     
     // User has exceeded the last index, moving user to first index
         menuIndex = 0;
@@ -84,8 +88,27 @@ if (move != 0) {
 var push;
 push = max(keyboard_check_pressed(vk_enter), keyboard_check_pressed(vk_space));
 
-if( push == 1 ) {
-    script_execute(scr_menu_main(menuIndex));
+if(push == 1) {
+    
+    switch(menuIndex){
+    
+        case 0: // Controls
+            room_goto(rm_Controls);
+            break;
+        case 1: // Languages
+            room_goto(rm_Languages);
+            break;
+        case 2: // Audio
+            room_goto(rm_Audio);
+            break;
+        case 3: // Back
+            room_goto(rm_Main);
+            break;
+        default:
+            break;
+    
+    }
+    
 }
 </string>
           </argument>
@@ -116,21 +139,25 @@ draw_set_color(c_white);
 
 var m;
 
-for ( m = 0; m &lt; array_length_1d(mainmenu_titles); m++){
+for ( m = 0; m &lt; array_length_1d(titles); m++){
 
     // draw_text(x + space, y + (m * space), string(menu[m]));
     if(menuIndex == m){
+        draw_sprite(spr_menu_button, 1, x , y + (m * space));
         draw_set_color(c_black);
-        draw_text_transformed(x + space, y + (m * space),
-                                 string(mainmenu_titles[m]), 2, 2, 0);
-        draw_set_color(c_white);
+        draw_text_transformed(x + space/4, y + (m * space),
+                                 string(titles[m]), 2, 2, 0);
+        draw_set_color(c_white);      
+        
     } else {
-        draw_text_transformed(x + space, y + (m * space),
-                                 string(mainmenu_titles[m]), 2, 2, 0);
+        draw_sprite(spr_menu_button, 0, x , y + (m * space));
+        draw_text_transformed(x + space/4, y + (m * space),
+                                 string(titles[m]), 2, 2, 0);
+        
     }
 }
 
-draw_sprite(sprite_index, 0, x+16, y + menuIndex * space);
+draw_sprite(sprite_index, 0, x-space, y + menuIndex * space);
 </string>
           </argument>
         </arguments>

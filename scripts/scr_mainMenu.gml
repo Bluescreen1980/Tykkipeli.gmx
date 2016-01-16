@@ -5,6 +5,7 @@ switch(menuIndex){
         break;
         
     case 1: // Go to options
+        room_goto(rm_optionsMenu);
         break;
         
     case 2: // Quit the game
