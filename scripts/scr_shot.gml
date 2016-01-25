@@ -42,4 +42,3 @@ else if (halfway = true){
 image_xscale =  image_xscale-0.1
 image_yscale =  image_yscale-0.1
 }
-

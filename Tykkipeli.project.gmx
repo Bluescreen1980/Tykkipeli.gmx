@@ -42,6 +42,7 @@
     <script>scripts\scr_callEachCannon.gml</script>
     <script>scripts\scr_shootPlace.gml</script>
     <script>scripts\scr_tykkikaantyy.gml</script>
+    <script>scripts\scr_tykkikaantyy2.gml</script>
     <script>scripts\scr_initiate_at_start.gml</script>
     <script>scripts\scr_testi.gml</script>
     <script>scripts\scr_Get_Obj_GridPos.gml</script>
@@ -53,11 +54,11 @@
     <script>scripts\scr_Clear_Yard_Data.gml</script>
     <script>scripts\scr_random_block.gml</script>
     <script>scripts\src_create_shot1.gml</script>
+    <script>scripts\src_create_shot2.gml</script>
     <script>scripts\scr_shot.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_old_english</font>
-    <font>fonts\debug</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_start_controller</object>
@@ -70,7 +71,9 @@
     <object>objects\obj_kulmapalikka</object>
     <object>objects\obj_nelio_iso</object>
     <object>objects\obj_kursori</object>
+    <object>objects\obj_kursori2</object>
     <object>objects\obj_kuula</object>
+    <object>objects\obj_kuula2</object>
     <object>objects\object11</object>
     <object>objects\obj_este_jarvi</object>
     <object>objects\obj_joki3</object>
@@ -79,11 +82,11 @@
     <object>objects\obj_vesieste2</object>
     <object>objects\obj_vuori</object>
     <object>objects\obj_tykki</object>
+    <object>objects\obj_tykki2</object>
     <object>objects\obj_sorapiha</object>
     <object>objects\obj_explosion</object>
     <object>objects\obj_kraateri</object>
     <object>objects\obj_damager</object>
-    <object>objects\obj_debug_draw</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>

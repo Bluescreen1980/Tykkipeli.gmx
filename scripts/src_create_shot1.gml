@@ -4,7 +4,7 @@ var inst;
 
 loading++;
 
-if (loading >10){
+if (loading >20){
 
 loading = 0;
 
