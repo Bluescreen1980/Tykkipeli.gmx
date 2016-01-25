@@ -9,10 +9,16 @@ global.kursoripalikkaX = 5;  //aloitusruudut kursoripalikoille
 global.kursoripalikkaY = 5;
 global.kursoriX = 0;
 global.kursoriY = 0;
+global.kursoriX2 = 0;
+global.kursoriY2 = 0;
 global.ballspeed = 12; //ammusten nopeus
 global.temp_enter_pressed = 0; // enterin painalluksia laskeva numero
+global.temp_enter2_pressed = 0; //kakkospelaajan "enter"
 global.block_generate_mode = 1 ; // se miten blokit määräytyy 0 = järjestyksessä (testi) 1=randomilla
 global.edellinen_numero = 0; // temp
+global.voiasettaa1 = false;
+global.voiasettaa2 = false;
+
 
 //global.tasoarray pitää sisällään kaksiulotteisessa taulukossa kentän ruudut, array
 //luodaan alussa pitämään sisällään kaikki pelialueen sisäiset ruudut

@@ -33,9 +33,6 @@
     <sprite>sprites\spr_tykki</sprite>
     <sprite>sprites\spr_explosion</sprite>
     <sprite>sprites\spr_kraateri</sprite>
-    <sprite>sprites\spr_logo</sprite>
-    <sprite>sprites\spr_menu_marker</sprite>
-    <sprite>sprites\spr_menu_button</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_default</background>
@@ -45,6 +42,7 @@
     <script>scripts\scr_callEachCannon.gml</script>
     <script>scripts\scr_shootPlace.gml</script>
     <script>scripts\scr_tykkikaantyy.gml</script>
+    <script>scripts\scr_tykkikaantyy2.gml</script>
     <script>scripts\scr_initiate_at_start.gml</script>
     <script>scripts\scr_testi.gml</script>
     <script>scripts\scr_Get_Obj_GridPos.gml</script>
@@ -56,6 +54,7 @@
     <script>scripts\scr_Clear_Yard_Data.gml</script>
     <script>scripts\scr_random_block.gml</script>
     <script>scripts\src_create_shot1.gml</script>
+    <script>scripts\src_create_shot2.gml</script>
     <script>scripts\scr_shot.gml</script>
   </scripts>
   <fonts name="fonts">
@@ -72,7 +71,9 @@
     <object>objects\obj_kulmapalikka</object>
     <object>objects\obj_nelio_iso</object>
     <object>objects\obj_kursori</object>
+    <object>objects\obj_kursori2</object>
     <object>objects\obj_kuula</object>
+    <object>objects\obj_kuula2</object>
     <object>objects\object11</object>
     <object>objects\obj_este_jarvi</object>
     <object>objects\obj_joki3</object>
@@ -81,30 +82,16 @@
     <object>objects\obj_vesieste2</object>
     <object>objects\obj_vuori</object>
     <object>objects\obj_tykki</object>
+    <object>objects\obj_tykki2</object>
     <object>objects\obj_sorapiha</object>
     <object>objects\obj_explosion</object>
     <object>objects\obj_kraateri</object>
     <object>objects\obj_damager</object>
-    <object>objects\obj_logo</object>
-    <objects name="Menus">
-      <object>objects\obj_optionsMenu</object>
-      <object>objects\obj_mainMenu</object>
-      <object>objects\obj_unfinishedMenu</object>
-    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_Main</room>
     <room>rooms\rm_start</room>
     <room>rooms\rm_taso</room>
     <room>rooms\rm_harjoitusta</room>
-    <rooms name="Menus">
-      <room>rooms\rm_Options</room>
-      <room>rooms\rm_EndScreen</room>
-      <room>rooms\rm_PlayGame</room>
-      <room>rooms\rm_Controls</room>
-      <room>rooms\rm_Languages</room>
-      <room>rooms\rm_Audio</room>
-    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

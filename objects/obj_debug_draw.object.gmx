@@ -3,74 +3,12 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
-  <persistent>0</persistent>
+  <depth>-500</depth>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>scr_initiate_at_start</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>224</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_another_room</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>11</kind>
-            <room>rm_harjoitusta</room>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="1">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -87,9 +25,61 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.tuhoapalikat == true){
-instance_destroy();
+            <string>if(keyboard_check_pressed(ord("Q")) == 1){
+    room_goto_previous();
 }
+
+if(keyboard_check_pressed(ord("E")) == 1){
+    room_goto_next();
+}
+
+if(keyboard_check_pressed(ord("V")) == 1){
+    if(self.visible == true){
+        self.visible = false;
+    } else {
+        self.visible = true;
+    }
+}
+
+if(keyboard_check_pressed(ord("F")) == 1){
+    if(fps_visible == true){
+        fps_visible = false;
+    } else {
+        fps_visible = true;
+    }
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_colour(c_white);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+draw_set_font(debug);
+
+draw_text(0,20,"Debug draw only for developers");
+draw_text(0,40,"FPS: " + string(fps_real));
+draw_text(0,60,"&lt;- Previous (Q)" + string(room_get_name(room)) + " Next (E) -&gt;");
+draw_text(0,80,"V for toggling Visibility");
 </string>
           </argument>
         </arguments>

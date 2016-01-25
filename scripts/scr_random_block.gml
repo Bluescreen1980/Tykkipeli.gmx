@@ -85,4 +85,3 @@ switch (random_palikka)
       break;     
       }
 }
-
