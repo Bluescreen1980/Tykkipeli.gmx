@@ -33,9 +33,12 @@
     <sprite>sprites\spr_tykki</sprite>
     <sprite>sprites\spr_explosion</sprite>
     <sprite>sprites\spr_kraateri</sprite>
+    <sprite>sprites\spr_tek_tykkipeli</sprite>
+    <sprite>sprites\spr_alueen_raja</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_default</background>
+    <background>background\bck_linnake</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -56,9 +59,11 @@
     <script>scripts\src_create_shot1.gml</script>
     <script>scripts\src_create_shot2.gml</script>
     <script>scripts\scr_shot.gml</script>
+    <script>scripts\scr_checkEnding.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_old_english</font>
+    <font>fonts\fnt_old_english_sm</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_start_controller</object>
@@ -87,9 +92,13 @@
     <object>objects\obj_explosion</object>
     <object>objects\obj_kraateri</object>
     <object>objects\obj_damager</object>
+    <object>objects\obj_End_controller</object>
+    <object>objects\obj_teksti</object>
+    <object>objects\obj_alueen_raja</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
+    <room>rooms\rm_gameEnd</room>
     <room>rooms\rm_taso</room>
     <room>rooms\rm_harjoitusta</room>
   </rooms>
