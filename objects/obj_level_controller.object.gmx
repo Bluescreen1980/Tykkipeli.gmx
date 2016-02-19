@@ -87,7 +87,7 @@ if global.gamemode = 0 {        // nolla aloittaa pelin
     
     //alustetaan seuraavan (rakentelu) vuoron aika
     
-    global.aika = 60*45; //(koska yhdessä sekunnissa on 60 steppiä)
+    global.aika = 60*global.rakenteluaika; //(koska yhdessä sekunnissa on 60 steppiä)
     
     global.gamemode = 1;
 }
