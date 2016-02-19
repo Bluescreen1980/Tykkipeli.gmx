@@ -101,6 +101,11 @@ else{
             <string>global.kursoriX = x;
 global.kursoriY = y;
 
+if (global.gamemode = 1 &amp;&amp; global.aika = 60*global.rakenteluaika-1){
+script_execute(scr_random_block);
+}
+
+
 if (global.gamemode = 2){  // tykkien asetteluvuoro
 sprite_index = spr_tykki;
 image_xscale = 1;
@@ -115,6 +120,10 @@ sprite_index = spr_tahtain;
 image_xscale = global.ruudun_koko / sprite_width  ;
 image_yscale = global.ruudun_koko / sprite_height  ; 
 } 
+
+if (global.gamemode = 4){
+script_execute(scr_random_block);
+}
 </string>
           </argument>
         </arguments>
