@@ -4,7 +4,7 @@ var inst;
 
 loading++;
 
-if (loading >20){
+if (loading >global.tykkitulinopeus+gunDamagePenalty){
 
 loading = 0;
 
